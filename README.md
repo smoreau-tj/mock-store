@@ -2,9 +2,9 @@
 
 Company Name: Bob's Super Spectacular Wonderful Amazing Store.
 
-Logo: [File](https://d.pr/i/ugdkaa)
-Sketch File: [File](https://www.sketch.com/s/567b2d62-1ed6-4914-a79d-caf4af030e5d/v/ZWzRdG/)
-You can find the assets for the store located in the section that says [Download Assets](https://d.pr/i/HVUSsK).
+Logo: [File](https://d.pr/i/ugdkaa)  
+Sketch File: [File](https://www.sketch.com/s/567b2d62-1ed6-4914-a79d-caf4af030e5d/v/ZWzRdG/)  
+You can find the assets for the store located in the section that says [Download Assets](https://d.pr/i/HVUSsK).  
 
 - [ ] Create a home page that features the 4 items on th page  
 - [ ] Create a PLP (Product List Page) page  
