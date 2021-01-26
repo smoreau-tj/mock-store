@@ -1,34 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mock Store
 
-## Getting Started
+Company Name: Bob's Super Spectacular Wonderful Amazing Store.
 
-First, run the development server:
+Logo: [File](https://d.pr/i/ugdkaa)
+Sketch File: [File](https://www.sketch.com/s/567b2d62-1ed6-4914-a79d-caf4af030e5d/v/ZWzRdG/)
+You can find the assets for the store located in the section that says [Download Assets](https://d.pr/i/HVUSsK).
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+[]Create a home page that features the 4 items on th page
+[]Create a PLP (Product List Page) page
+[]Create a  PDP (Product Detail) page
+[]Create a cart page
+[]Create a user account page 
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Resources:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+[https://fakestoreapi.com/docs](https://fakestoreapi.com/docs)
+[https://www.storefrontui.io/](https://www.storefrontui.io/)
+[https://storybook.storefrontui.io/?path=/story/introduction--how-to-use-storybook](https://storybook.storefrontui.io/?path=/story/introduction--how-to-use-storybook)
+[https://coolors.co/2660a4-edf7f6-f19953-c47335-56351e](https://coolors.co/2660a4-edf7f6-f19953-c47335-56351e)
+Mens's clothing: [https://fakestoreapi.com/products/category/men clothing](https://fakestoreapi.com/products/category/men%20clothing)
+women's clothing: [https://fakestoreapi.com/products/category/women clothing](https://fakestoreapi.com/products/category/women%20clothing)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+Use the following user for the cart: [https://fakestoreapi.com/carts/user/2](https://fakestoreapi.com/carts/user/2)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+User demographic: [https://fakestoreapi.com/users/2](https://fakestoreapi.com/users/2) 
 
-## Learn More
+## Deployment
+You don't need to do much to deploy the site. The site is connected to a vercel project.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Feature the following items on the home page:
+Mens:  id: 2, 6
+Womens: id 17, 19
