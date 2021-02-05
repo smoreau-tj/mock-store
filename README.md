@@ -37,7 +37,7 @@ Use the following user for the cart: [https://fakestoreapi.com/carts/user/2](htt
 User demographic: [https://fakestoreapi.com/users/2](https://fakestoreapi.com/users/2) 
 
 ## Deployment
-You don't need to worry about the deployment of the site. The site is connected to a vercel project. As soon as you push up to main it will deploy the the project url. You can view your store at the following url:  [url](https://mock-store.vercel.app/ "Mock Store")
+You don't need to worry about the deployment of the site. The site is connected to a vercel project. As soon as you push up to main it will deploy the the project url. You can view your store at the following url:  [url](https://mock-store-gxxobl6gx.vercel.app/ "Mock Store")
 
 ## Additional Information 
 Feature the following items on the home page:  
