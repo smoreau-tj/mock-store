@@ -1,9 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import Header from '../components/header'
+import Footer from '../components/footer'
+
 export default function ProductList() {
   return (
     <div>
+    <Header />
       Product List Page
       <section>
       <Link href='/products/product'>
@@ -32,6 +36,7 @@ export default function ProductList() {
           height={182}
           alt='banner' />
       </section>
+      <Footer />
     </div>
   )
 }

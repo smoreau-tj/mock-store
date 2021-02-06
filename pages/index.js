@@ -1,6 +1,12 @@
+// Next.js modules
 import Head from 'next/head'
 import Image from 'next/image'
+// CSS styles
 import styles from '../styles/Home.module.css'
+// Component imports
+import Header from '../components/header'
+import Footer from '../components/footer'
+
 
 export default function Home() {
   return (
@@ -9,6 +15,7 @@ export default function Home() {
         <title>Bob's SSWA Store</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Header />
       Hero section
       <section>
         <Image
@@ -48,7 +55,7 @@ export default function Home() {
           height={182}
           alt='banner' />
       </section>
-
+      <Footer />
     </div>
   )
 }
