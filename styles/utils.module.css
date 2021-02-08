@@ -169,6 +169,11 @@
   list-style: none;
   display: grid;
   place-items: center;
+  margin-bottom: 25rem;
+}
+
+.productSingle h5 {
+  color: red;
 }
 /* END Product styles */
 
