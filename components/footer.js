@@ -1,5 +1,9 @@
+import utilStyles from '../styles/utils.module.css'
+
 export default function Footer() {
   return (
-    <div>Footer</div>
+    <footer className={utilStyles.footer}>
+
+    </footer>
   )
 }

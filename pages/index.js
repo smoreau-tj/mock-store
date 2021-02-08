@@ -1,61 +1,54 @@
 // Next.js modules
 import Head from 'next/head'
 import Image from 'next/image'
+
 // CSS styles
-import styles from '../styles/Home.module.css'
+import utilStyles from '../styles/utils.module.css'
+
 // Component imports
-import Header from '../components/header'
-import Footer from '../components/footer'
+import Layout from '../components/layout'
+import Hero from '../components/hero'
+import Banner from '../components/banner'
+import ProductList from '../components/productList'
 
 
-export default function Home() {
+export async function getStaticProps() {
+  // fetch both collections and save to separate vars
+  const fetchUrl = url => fetch(url).then(res => res.json())
+  const [productsMen, productsWomen] = await Promise.all([
+    fetchUrl('https://fakestoreapi.com/products/category/men clothing'),
+    fetchUrl('https://fakestoreapi.com/products/category/women clothing')
+  ])
+    
+  return {
+    props: {
+      productsMen, productsWomen
+    }
+  }
+}
+
+
+export default function Home({ productsMen, productsWomen }) {
+  // combine collections
+  const products = productsMen.concat(productsWomen)
+  // select featured products by id
+  const featuredProducts = products.filter(product => {
+    if (product.id === 1 || product.id === 4 || product.id === 17 || product.id === 19) {
+      return true
+    }
+  })
+  
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Bob's SSWA Store</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Header />
-      Hero section
-      <section>
-        <Image
-          src='/images/Hero Copy-2.png'
-          width={1440}
-          height={600}
-          alt='hero' />
-      </section>
-        Shopping Banner
-      <section>
-        <Image
-          src='/images/Rectangle.png'
-          width={1280}
-          height={342}
-          alt='banner' />
-      </section>
-      Product Links
-      <section>
-        <Image
-          src='/images/Featured Product 1-1.png'
-          width={182}
-          height={182}
-          alt='banner' />
-        <Image
-          src='/images/Featured Product 1-1.png'
-          width={182}
-          height={182}
-          alt='banner' />
-        <Image
-          src='/images/Featured Product 1-1.png'
-          width={182}
-          height={182}
-          alt='banner' />
-        <Image
-          src='/images/Featured Product 1-1.png'
-          width={182}
-          height={182}
-          alt='banner' />
-      </section>
-      <Footer />
-    </div>
+    <Layout>
+      <div className={utilStyles.main}>
+        <Head>
+          <title>Bob's SSWA Store</title>
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+        <Hero />
+        <Banner />
+        <ProductList products={featuredProducts} />
+      </div>
+    </Layout>
   )
 }
