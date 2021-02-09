@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 import utilStyles from '../styles/utils.module.css'
 
-export default function Product({ product }) {
+export default function SingleProduct({ product }) {
   return (
     <li className={utilStyles.productSingle}>
     <Image 

@@ -2,14 +2,36 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 import Layout from '../../components/layout'
+import SingleProduct from '../../components/singleProduct'
 
 import utilStyles from '../../styles/utils.module.css'
 
-export default function Product() {
+
+export async function getStaticPaths() {
+  const res = await fetch('https://fakestoreapi.com/products')
+  const products = await res.json()
+  
+  const paths = products.map((product) => ({
+    params: { id: `${product.id}` } ,
+  }))
+  
+  return { paths, fallback: false }
+}
+
+export async function getStaticProps({ params }) {
+  const res = await fetch(`https://fakestoreapi.com/products/${params.id}`)
+  const product = await res.json()
+  
+  return { props: { product } }
+}
+
+
+export default function Product({ product }) {
   return (
     <Layout>
       <div className={utilStyles.productContainer}>
-        <div className={utilStyles.productImages}>
+      <SingleProduct product={product}/>
+        {/* <div className={utilStyles.productImages}>
           <div className={utilStyles.imageMain}>
             <Image
               src='/images/Featured Product 1.png'
@@ -26,7 +48,7 @@ export default function Product() {
         </div>
 
         <div className={utilStyles.productDetails}>
-          <h2>Product Title</h2>
+          <h2>Product title</h2>
           <span>$100.00</span>
           <br />
           <br />
@@ -35,7 +57,7 @@ export default function Product() {
           </Link>
           <br />
           <p>Lorem ipsum dolor entret. Lorem ipsum dolor entret. Lorem ipsum dolor entret. Lorem ipsum dolor entret. Lorem ipsum dolor entret. Lorem ipsum dolor entret. Lorem ipsum dolor entret. Lorem ipsum dolor entret.</p>
-        </div>
+        </div> */}
       </div>
     </Layout>
   )

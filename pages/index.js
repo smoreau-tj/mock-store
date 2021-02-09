@@ -18,8 +18,8 @@ export async function getStaticProps() {
   const [productsMen, productsWomen] = await Promise.all([
     fetchUrl('https://fakestoreapi.com/products/category/men clothing'),
     fetchUrl('https://fakestoreapi.com/products/category/women clothing')
-  ])
-    
+  ])    
+  
   return {
     props: {
       productsMen, productsWomen
