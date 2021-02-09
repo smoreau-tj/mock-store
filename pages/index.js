@@ -39,15 +39,14 @@ export default function Home({ productsMen, productsWomen }) {
   
   return (
     <Layout>
-      <div className={utilStyles.main}>
         <Head>
           <title>Bob's SSWA Store</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
+      <div className={utilStyles.main}>
         <Hero />
         <Banner />
-        <ProductList 
-          products={featuredProducts} />
+        <ProductList products={featuredProducts} />
       </div>
     </Layout>
   )
