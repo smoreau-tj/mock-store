@@ -19,9 +19,9 @@
   background: lightgray;
 }
 
-.layout {
+/* .layout {
   border: 1px solid black;
-}
+} */
 /* END Layout styles */
 
 
@@ -54,6 +54,7 @@
   margin-bottom: 40px;
   max-width: 80%;
   position: relative;
+  
 }
 
 .banner button {
@@ -64,19 +65,22 @@
   place-content: center;
   background: #F19953;
   width: 160px;
-  height: 60px;
-  font-size: 1rem;
+  height: 55px;
+  font-size: .9rem;
   color: white;
   border: none;
-  padding: 1px;
+  margin-left: 60px;
+  margin-top: 100px;
 }
 .banner p {
   display: grid;
   grid-row-start: 1;
   position: absolute;
   color: white;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 105px;
 }
 
 .featured {

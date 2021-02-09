@@ -9,7 +9,7 @@ import utilStyles from '../styles/utils.module.css'
 export default function Header() {
   return (
     <header className={utilStyles.header}>
-      <Link href='/categories'>
+      <Link href='/cart'>
         <a>
           <FontAwesomeIcon icon={faShoppingCart}></FontAwesomeIcon>
         </a>
