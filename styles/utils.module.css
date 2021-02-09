@@ -50,9 +50,33 @@
 
 .banner {
   display: grid;
-  grid-row: 2 / span 1;
+  /* grid-template-rows: 130px 130px; */
   margin-bottom: 40px;
   max-width: 80%;
+  position: relative;
+}
+
+.banner button {
+  position: absolute;
+  display: grid;
+  grid-row-start: 1;
+  align-self: center;
+  place-content: center;
+  background: #F19953;
+  width: 160px;
+  height: 60px;
+  font-size: 1rem;
+  color: white;
+  border: none;
+  padding: 1px;
+}
+.banner p {
+  display: grid;
+  grid-row-start: 1;
+  position: absolute;
+  color: white;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 .featured {
@@ -140,7 +164,7 @@
   grid-row-start: 1;
   grid-column-start: 1;
   align-content: center;
-  color: red;
+  color: #F19953;
 }
 
 .productDetails p {
@@ -168,7 +192,7 @@
 }
 
 .productSingle h5 {
-  color: red;
+  color: #F19953;
 }
 /* END Product styles */
 

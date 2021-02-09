@@ -10,6 +10,8 @@ export default function Banner() {
           width={1280}
           height={342}
           alt='banner' />
+          <p>Free your wardrobe</p>
+          <button>Shop<br /> Now</button>
     </section>
   )
 }
