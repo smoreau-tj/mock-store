@@ -79,14 +79,9 @@
 }
 
 .category {
+  display: grid;
   margin-top: 50px;
   padding: 10px;
-  border: 1px solid black;
-  height: 150px;
-  width: 300px;
-  display: grid;
-  align-content: end;
-  justify-content: start;
 }
 /* END Categories page styles */
 
