@@ -15,10 +15,14 @@ export async function getStaticProps() {
   }
 }
 
+function capitalizeName(string) {
+  return string.charAt(0).toUpperCase() + string.slice(1);
+}
+
 export default function Cart({ user }) {
   return (
     <Layout>
-      <section className={utilStyles.cart}>Welcome, {user.username}!</section>
+      <section className={utilStyles.cart}>Welcome, {capitalizeName(user.name.firstname)}!</section>
     </Layout>
   )
 }

@@ -1,6 +1,5 @@
 // Next.js modules
 import Head from 'next/head'
-import Image from 'next/image'
 
 // CSS styles
 import utilStyles from '../styles/utils.module.css'
@@ -19,7 +18,7 @@ export async function getStaticProps() {
     fetchUrl('https://fakestoreapi.com/products/category/men clothing'),
     fetchUrl('https://fakestoreapi.com/products/category/women clothing')
   ])    
-  
+  // set response as props
   return {
     props: {
       productsMen, productsWomen
@@ -47,7 +46,8 @@ export default function Home({ productsMen, productsWomen }) {
         </Head>
         <Hero />
         <Banner />
-        <ProductList products={featuredProducts} />
+        <ProductList 
+          products={featuredProducts} />
       </div>
     </Layout>
   )

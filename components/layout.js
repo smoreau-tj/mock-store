@@ -7,7 +7,7 @@ export default function Layout({children}) {
   return (
     <>
       <Header />
-      <main className={utilStyles.layout}>{children}</main>
+        <main>{children}</main>
       <Footer />
     </>
   )

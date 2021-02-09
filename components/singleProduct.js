@@ -19,7 +19,6 @@ export default function SingleProduct({ product }) {
           {/* <button>Add to cart</button> */}
           {/* <p>{product.description}</p> */}
         </li>
-
       </a>
     </Link>
   )
